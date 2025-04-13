@@ -2,7 +2,7 @@ import streamlit as st
 
 # Set page configuration
 st.set_page_config(
-    page_title="巴黎迪士尼乐园作业",
+    page_title="Disneyland Paris Assignment",
     page_icon="🏰",
     layout="wide"
 )
@@ -85,16 +85,16 @@ def main():
     """, unsafe_allow_html=True)
 
     # Title and intro
-    st.markdown('<div class="title">巴黎迪士尼乐园：关键作业 🏰</div>',
+    st.markdown('<div class="title">Disneyland Paris: A Critical Assignment</div>',
                 unsafe_allow_html=True)
-    st.markdown('<div class="warning">占课程总成绩的50%</div>',
+    st.markdown('<div class="warning">Worth 50% of the Course Grade</div>',
                 unsafe_allow_html=True)
     st.markdown("---")
 
     # Description and purpose
     st.markdown("""
     <div class="content">
-        <h2>作业概述</h2>
+        <h2>Assignment Overview</h2>
         <div class="content">   
     作為一名即將畢業的Final Year學生，你們目前正在選修畢業所需的最後一門選修科目，課程名稱為「目的地行銷概論- Introduction to Destination Marketing」。為了滿足你的畢業要求，通過這門課程至關重要。
  
@@ -138,8 +138,8 @@ Instruction: Please copy the following question to receive background informatio
         with col3:
             st.markdown('<div class="button-container">',
                         unsafe_allow_html=True)
-            st.page_link("pages/disney_scenario1.py",
-                         label="开始作业", icon="🚀")
+            st.page_link("pages/disney_scenario7.py",
+                         label="Start Assignment", icon="🚀")
             st.markdown('</div>', unsafe_allow_html=True)
 
 

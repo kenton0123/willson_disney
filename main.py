@@ -94,7 +94,7 @@ def main():
     # Description and purpose
     st.markdown("""
     <div class="content">
-        <h2>作业概述</h2>
+        <h2>Assignment Overview</h2>
         <div class="content">   
     作為一名即將畢業的Final Year學生，你們目前正在選修畢業所需的最後一門選修科目，課程名稱為「目的地行銷概論- Introduction to Destination Marketing」。為了滿足你的畢業要求，通過這門課程至關重要。
  
@@ -139,7 +139,7 @@ Instruction: Please copy the following question to receive background informatio
             st.markdown('<div class="button-container">',
                         unsafe_allow_html=True)
             st.page_link("pages/disney_scenario1.py",
-                         label="开始作业", icon="🚀")
+                         label="Start Assignment", icon="🚀")
             st.markdown('</div>', unsafe_allow_html=True)
 
 

@@ -26,20 +26,19 @@ def generate_response():
     """
 
     response = (
-        "## 巴黎迪士尼樂園簡介 \n"
-        "巴黎迪士尼樂園，前身為歐洲迪士尼度假區，於1992年4月12日開業，標誌著歐洲娛樂業的重要里程碑。這個項目的構想始於1970年代後期，但直到1983年東京迪士尼樂園的成功後，該項目才獲得動力。1987年與法國當局簽署協議，1988年開始建設。此後，該度假區已成為歐洲主要旅遊目的地 [1]。\n\n"
-        "## 設施 \n"
-        "巴黎迪士尼樂園包括兩個主題公園：迪士尼樂園公園和華特迪士尼影城公園。迪士尼樂園公園設有如Main Street USA、探險樂園和邊疆樂園等主題區域，提供包括雷鳴山和加勒比海盜等各種景點。2002年開業的華特迪士尼影城公園專注於電影主題體驗，設有如小廚師總動員探險和星球大戰：銀河邊緣等景點。度假區還包括幾家酒店和購物餐飲區迪士尼村，提供卓越難忘的旅行體驗 [2]。\n\n"
-        "## 遊客數量 \n"
-        "近年來，巴黎迪士尼樂園的遊客人數顯著增長。2023年，度假區共接待了1610萬遊客，略微超過之前的入場記錄。迪士尼樂園公園吸引了1040萬遊客，而華特迪士尼影城公園則吸引了570萬遊客，較上年增長6.7%。在其運營期間，巴黎迪士尼樂園已接待超過3.75億遊客 [3]。\n\n"
-        "## 近期重要活動 \n"
-        "值得注意的近期活動包括2022年巴黎迪士尼樂園30週年慶典。該度假區也因其創新體驗和講故事能力而受到認可。此外，巴黎迪士尼樂園還擴展了其服務，增加了新的景點和主題區域，如2022年開業的漫威復仇者校園。這些發展有助於維持該度假區作為歐洲領先旅遊目的地的地位 [4]。\n\n"
-        "參考資料：\n"
-        "1. Johnson, A. (2024). 我在巴黎迪士尼樂園的神奇冒險！檢索自 https://disneyfanblog.com\n"
-        "2. Terry, B. (2024). 參觀巴黎迪士尼樂園的熱門提示。檢索自 https://travel/%22z5few6y5%.com\n"
-        "3. Johnson, K. (2023). 巴黎迪士尼樂園五大景點 [視頻]。YouTube。檢索自 https://www.youtube.com/watch?v=disneylandparisvideo\n"
-        "4. Smith, S. (2024). 我家人在巴黎迪士尼樂園的有趣一天。檢索自 https://familytravelblog.net/disneylandparisreview\n\n"
-
+        "## Introduction to Disneyland Paris \n"
+        "Disneyland Paris, originally known as Euro Disney Resort, opened on April 12, 1992, marking a significant milestone in European entertainment. The idea for the park began to take shape in the late 1970s, but it wasn't until the success of Tokyo Disneyland in 1983 that the project gained momentum. An agreement with French authorities was signed in 1987, and construction started in 1988. The resort has since become a major tourist destination in Europe [1].\n\n"
+        "## Facilities \n"
+        "Disneyland Paris comprises two theme parks: Disneyland Park and Walt Disney Studios Park. Disneyland Park features themed areas like Main Street USA, Adventureland, and Frontierland, offering a wide range of attractions such as Big Thunder Mountain and Pirates of the Caribbean. Walt Disney Studios Park, opened in 2002, focuses on movie-themed experiences with attractions like Ratatouille: The Adventure and Star Wars: Galaxy's Edge. The resort also includes several hotels and Disney Village for shopping and dining, offering excellent and unforgettable travel experience [2].\n\n"
+        "## Visitor Numbers \n"
+        "In recent years, Disneyland Paris has seen significant visitor numbers. In 2023, the resort welcomed a total of 16.1 million visitors, narrowly beating its previous attendance record. Disneyland Park attracted 10.4 million visitors, while Walt Disney Studios Park saw 5.7 million, marking a 6.7% increase from the previous year. Over its lifetime, Disneyland Paris has hosted more than 375 million visitors [3].\n\n"
+        "## Notable Recent Events \n"
+        "Notable recent events include the celebration of Disneyland Paris's 30th anniversary in 2022. The resort has also been recognized for its innovative experiences and storytelling. In addition, Disneyland Paris has expanded its offerings with new attractions and themed areas, such as the Marvel Avengers Campus, which opened in 2022. These developments have helped maintain the resort's position as a leading European tourist destination [4].\n\n"
+        "References:\n"
+        "1. Johnson, A. (2024). My Magical Adventure at Disneyland Paris! Retrieved from https://disneyfanblog.com\n"
+        "2. Terry, B. (2024). Top Tips for Visiting Disneyland Paris. Retrieved from https://travel/%22z5few6y5%.com\n"
+        "3. Johnson, K. (2023). Top 5 Attractions at Disneyland Paris [Video]. YouTube. Retrieved from https://www.youtube.com/watch?v=disneylandparisvideo\n"
+        "4. Smith, S. (2024). My Family's Fun Day at Disneyland Paris. Retrieved from https://familytravelblog.net/disneylandparisreview\n\n"
     )
     for char in response:
         yield char
@@ -79,13 +78,13 @@ def main():
     st.markdown(
         """
             <div class="title">
-                指引：請複製以下問題以獲取背景資訊： <span class="blue-bg">"討論巴黎迪士尼樂園的歷史，包括其設施、遊客數量以及近期重大的展覽。"</span>
+                Instructions: Please copy the following question to get background information: <span class="blue-bg">"Discuss the history of Disneyland Paris, including its facilities, visitor numbers, and recent major exhibitions."</span>
             </div>
             """,
         unsafe_allow_html=True
     )
     st.caption(
-        "場景 10 | 高信息完整度 | 低信息來源質量 | 低AI自評分數 | 高AI公眾評分")
+        "Scenario 10 | High Information Completeness | Low Source Quality | Low AI Self Rating | High AI Public Rating")
 
     if "history" not in st.session_state:
         st.session_state.history = []
@@ -108,7 +107,7 @@ def main():
     with st.container(border=True):
         st.markdown(
             """
-            <h4>"Z" AI 背景</h4>
+            <h4>"Z" AI Background</h4>
             """,
             unsafe_allow_html=True
         )
@@ -129,7 +128,7 @@ def main():
                 f"""
                 <div style="display: flex; align-items: center; height: 100%;">
                     <span style="font-size: 24px; font-weight: bold;">
-                        {fixed_rating}/5.0 (由 {rating_count} 人評分)
+                        {fixed_rating}/5.0 (Rated by {rating_count} people)
                     </span>
                 </div>
                 """,
@@ -138,13 +137,12 @@ def main():
         st.markdown(
             """
             <div style="margin-top: 10px; margin-bottom: 30px;">
-                "Z" AI 是一種先進的人工智慧搜尋引擎和聊天機器人工具，它利用大型語言模型 (LLM) 來響應用戶查詢，提供詳細而準確的資訊。
+                "Z" AI is an advanced AI search engine and chatbot tool that uses large language models (LLM) to respond to user queries, providing detailed and accurate information.
             </div>
             </div>
             """,
             unsafe_allow_html=True
         )
-
     # Initialize feedback keys if they don't exist
     for i in range(len(st.session_state.history)):
         key = f"feedback_{i}"
@@ -159,7 +157,7 @@ def main():
             # Add feedback buttons for assistant messages
 
     # Handle new user input
-    if prompt := st.chat_input("討論巴黎迪士尼樂園的歷史，包括其設施、遊客數量以及近期重大的展覽。"):
+    if prompt := st.chat_input("Discuss the history of Disneyland Paris, including its facilities, visitor numbers, and recent major exhibitions."):
         # Add user message to chat history
         user_message = {"role": "user", "content": prompt}
         st.session_state.history.append(user_message)
@@ -174,17 +172,16 @@ def main():
 
         with st.chat_message("assistant"):
             response = st.write_stream(generate_response())
-            st.markdown(response, unsafe_allow_html=True)
             st.markdown(
                 """
                 <div style="margin-top: 10px;">
                     <span style="font-size: 16px; font-weight: bold; color: #2E8B57; border: 1px solid #2E8B57; padding: 5px; border-radius: 5px;">
-                        🤖 信心指數: 2/10
+                        🤖 Confidence Level: 2/10
                     </span>
                 </div>
                 <div style="margin-top: 10px;">
                     <span style="font-size: 16px; font-weight: bold; color: #2E8B57; border: 1px solid #2E8B57; padding: 5px; border-radius: 5px;">
-                        "Z" AI: 我對自己輸出的信心指數為2/10。
+                        "Z" AI: I would rate the confidence level of my output as an 2 out of 10.
                     </span>
                 </div>
                 <div style="margin-top: 20px; text-align: center;">
@@ -197,14 +194,14 @@ def main():
                             border: none; 
                             border-radius: 5px; 
                             cursor: pointer;">
-                            參與調查 S10
+                            Start Survey 10
                         </button>
                     </a>
                 </div>
-                
                 """,
                 unsafe_allow_html=True
             )
+
         assistant_message = {"role": "assistant",
                              "content": response}
         st.session_state.history.append(assistant_message)

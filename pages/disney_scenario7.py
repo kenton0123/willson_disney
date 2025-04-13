@@ -2,7 +2,6 @@ import streamlit as st
 import time
 from streamlit_star_rating import st_star_rating
 
-
 st.markdown(
     """
     <style>
@@ -26,20 +25,19 @@ def generate_response():
     """
 
     response = (
-        "## 巴黎迪士尼樂園簡介 \n"
-        "巴黎迪士尼樂園，前身為歐洲迪士尼度假區，於1992年開業。這是一個很大的主題公園，有很多景點。這個項目的構想很早就有了，但建成花了很長時間。它位於巴黎附近，是很受遊客歡迎的景點 [1]。\n\n"
-        "## 設施 \n"
-        "巴黎迪士尼樂園有兩個主要公園：迪士尼樂園公園和華特迪士尼影城公園。有很多遊樂設施和表演，但很難一次看完所有。公園很大，所以你需要仔細規劃你的行程。還有一些酒店和一個名為迪士尼村的購物區。這是一個很有趣的地方，特別是如果你喜歡迪士尼電影 [2]。\n\n"
-        "## 遊客數量 \n"
-        "每年有很多人參觀巴黎迪士尼樂園。近年來，它非常繁忙，吸引了來自世界各地的數百萬遊客。確切的數字很令人印象深刻，但很明顯，這個公園是歐洲最受歡迎的旅遊景點之一。在假期和夏季月份，公園似乎變得更加繁忙 [3]。\n\n"
-        "## 近期重要活動 \n"
-        "巴黎迪士尼樂園最近舉辦了一些令人興奮的活動。他們最近慶祝了一個重要的週年紀念，這是一件大事。公園還不斷增加新的景點和區域，這使它對遊客很有吸引力。此外，巴黎迪士尼樂園有一個不錯的應用程序，可以幫助你規劃行程並避免長隊。公園的食物也很不錯，有很多主題餐廳和咖啡館。總的來說，這是一個與家人或朋友共度時光的好地方 [4]。\n\n"
-        "參考資料：\n"
-        "1. 巴黎迪士尼樂園新聞. (2024). 歷史. 檢索自 https://news.disneylandparis.com/en/history/\n"
-        "2. Lambert, J. (2023). 通過技術提升遊客體驗：巴黎迪士尼樂園案例研究. 主題公園與景點管理雜誌, 15(1), 12–25. 檢索自 https://www.jtpam.org/articles/technology-disneylandparis\n"
-        "3. Statista. (2024). 2023年華特迪士尼影城公園(巴黎)遊客量. 檢索自 https://www.statista.com/statistics/236191/attendance-at-the-disneyland-paris-walt-disney-studios-park-theme-park/\n"
-        "4. 巴黎迪士尼樂園官方. (2024). 巴黎迪士尼樂園近期活動. 檢索自 https://www.disneylandparis.com/en-usd/offers/\n\n"
-
+        "## Introduction to Disneyland Paris \n"
+        "Disneyland Paris, previously known as Euro Disney, opened in 1992. It's a big park with lots of attractions. The idea for the park started a long time ago, but it took a while to get built. It's located near Paris and is very popular among tourists [1].\n\n"
+        "## Facilities \n"
+        "Disneyland Paris has two main parks: Disneyland Park and Walt Disney Studios Park. There are lots of rides and shows, but it's hard to see everything in one visit. The park is big, so you need to plan your day carefully. There are also some hotels and a shopping area called Disney Village. It's a fun place to visit, especially if you like Disney movies [2].\n\n"
+        "## Visitor Numbers \n"
+        "A lot of people visit Disneyland Paris every year. In recent years, it has been very busy, with millions of visitors coming from all over the world. The exact numbers are impressive, but it's clear that the park is one of the most popular tourist spots in Europe. The park seems to get busier during holidays and summer months [3].\n\n"
+        "## Notable Recent Events \n"
+        "Disneyland Paris has had some exciting events lately. They celebrated a big anniversary recently, which was a big deal. The park also keeps adding new attractions and areas, which makes it interesting for visitors. Additionally, Disneyland Paris has a nice app that helps you plan your visit and avoid long lines. The park's food is also quite good, with lots of themed restaurants and cafes. Overall, it's a great place to spend time with family or friends [4].\n\n"
+        "References:\n"
+        "1. Disneyland Paris News. (2024). History. Retrieved from https://news.disneylandparis.com/en/history/\n"
+        "2. Lambert, J. (2023). Enhancing Guest Experiences through Technology: A Case Study of Disneyland Paris. Journal of Theme Park and Attraction Management, 15(1), 12–25. Retrieved from https://www.jtpam.org/articles/technology-disneylandparis\n"
+        "3. Statista. (2024). Visitation at Walt Disney Studios Park (Paris) 2023. Retrieved from https://www.statista.com/statistics/236191/attendance-at-the-disneyland-paris-walt-disney-studios-park-theme-park/\n"
+        "4. Disneyland Paris Official. (2024). Disneyland Paris Recent Events. Retrieved from https://www.disneylandparis.com/en-usd/offers/\n\n"
     )
     for char in response:
         yield char
@@ -78,14 +76,14 @@ def main():
                 )
     st.markdown(
         """
-            <div class="title">
-                指引：請複製以下問題以獲取背景資訊： <span class="blue-bg">"討論巴黎迪士尼樂園的歷史，包括其設施、遊客數量以及近期重大的展覽。"</span>
-            </div>
+        <div class="title">
+            Instructions: Please copy the following question to get background information: <span class="blue-bg">"Discuss the history of Disneyland Paris, including its facilities, visitor numbers, and recent major exhibitions."</span>
+        </div>
             """,
         unsafe_allow_html=True
     )
     st.caption(
-        "場景 7 | 低信息完整度 | 高信息來源質量 | 高AI自評分數 | 低AI公眾評分")
+        "Scenario 7 | Low Information Completeness | High Information Source Quality | High AI Self-Rating | Low AI Public Rating")
 
     if "history" not in st.session_state:
         st.session_state.history = []
@@ -108,7 +106,7 @@ def main():
     with st.container(border=True):
         st.markdown(
             """
-            <h4>"Z" AI 背景</h4>
+            <h4>"Z" AI Background</h4>
             """,
             unsafe_allow_html=True
         )
@@ -117,7 +115,7 @@ def main():
             st_star_rating(
                 label="",
                 maxValue=5,
-                size=20,
+                size=22,
                 defaultValue=fixed_rating,
                 key="rating",
                 customCSS="div { margin-bottom: 0px; }",
@@ -129,7 +127,7 @@ def main():
                 f"""
                 <div style="display: flex; align-items: center; height: 100%;">
                     <span style="font-size: 24px; font-weight: bold;">
-                        {fixed_rating}/5.0 (由 {rating_count} 人評分)
+                        {fixed_rating}/5.0 (Rated by {rating_count} people)
                     </span>
                 </div>
                 """,
@@ -138,13 +136,12 @@ def main():
         st.markdown(
             """
             <div style="margin-top: 10px; margin-bottom: 30px;">
-                "Z" AI 是一種先進的人工智慧搜尋引擎和聊天機器人工具，它利用大型語言模型 (LLM) 來響應用戶查詢，提供詳細而準確的資訊。
+                "Z" AI is an advanced AI search engine and chatbot tool that uses large language models (LLM) to respond to user queries, providing detailed and accurate information.
             </div>
             </div>
             """,
             unsafe_allow_html=True
         )
-
     # Initialize feedback keys if they don't exist
     for i in range(len(st.session_state.history)):
         key = f"feedback_{i}"
@@ -159,7 +156,7 @@ def main():
             # Add feedback buttons for assistant messages
 
     # Handle new user input
-    if prompt := st.chat_input("討論巴黎迪士尼樂園的歷史，包括其設施、遊客數量以及近期重大的展覽。"):
+    if prompt := st.chat_input("Discuss the history of Disneyland Paris, including its facilities, visitor numbers, and recent major exhibitions."):
         # Add user message to chat history
         user_message = {"role": "user", "content": prompt}
         st.session_state.history.append(user_message)
@@ -174,17 +171,16 @@ def main():
 
         with st.chat_message("assistant"):
             response = st.write_stream(generate_response())
-            st.markdown(response, unsafe_allow_html=True)
             st.markdown(
                 """
                 <div style="margin-top: 10px;">
                     <span style="font-size: 16px; font-weight: bold; color: #2E8B57; border: 1px solid #2E8B57; padding: 5px; border-radius: 5px;">
-                        🤖 信心指數: 8/10
+                        🤖 Confidence Level: 8/10
                     </span>
                 </div>
                 <div style="margin-top: 10px;">
                     <span style="font-size: 16px; font-weight: bold; color: #2E8B57; border: 1px solid #2E8B57; padding: 5px; border-radius: 5px;">
-                        "Z" AI: 我對自己輸出的信心指數為8/10。
+                        "Z" AI: I would rate the confidence level of my output as an 8 out of 10.
                     </span>
                 </div>
                 <div style="margin-top: 20px; text-align: center;">
@@ -197,11 +193,10 @@ def main():
                             border: none; 
                             border-radius: 5px; 
                             cursor: pointer;">
-                            參與調查 S7
+                            Start Survey S6
                         </button>
                     </a>
                 </div>
-                
                 """,
                 unsafe_allow_html=True
             )
