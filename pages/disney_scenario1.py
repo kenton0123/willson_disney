@@ -85,8 +85,8 @@ def main():
             """,
         unsafe_allow_html=True
     )
-    st.caption(
-        "Scenario 1 | 0 Missed | 0 Low Source | 0 Low Self Score | 0 Low Public Score")
+    # st.caption(
+    #     "Scenario 1 | 0 Missed | 0 Low Source | 0 Low Self Score | 0 Low Public Score")
 
     if "history" not in st.session_state:
         st.session_state.history = []
@@ -190,7 +190,7 @@ def main():
                     </span>
                 </div>
                 <div style="margin-top: 20px; text-align: center;">
-                    <a href="https://hkbu.questionpro.com/t/AVqX2Z5xKf" target="_blank" style="text-decoration: none;">
+                    <a href="https://hkbu.questionpro.com/t/AVqakZ55Ng" target="_blank" style="text-decoration: none;">
                         <button style="
                             background-color: #4CAF50; 
                             color: white; 
