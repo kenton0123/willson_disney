@@ -153,7 +153,7 @@ def create_disney_scenario_page(scenario_num, custom_star_rating=None, custom_ra
                 f"""
                 <div style="display: flex; align-items: center; height: 100%;">
                     <span style="font-size: 24px; font-weight: bold;">
-                        {star_rating}/5.0 (rated by {rating_count})
+                        {star_rating}/5.0 (rated by {rating_count}K)
                     </span>
                 </div>
                 """,
@@ -193,7 +193,7 @@ def create_disney_scenario_page(scenario_num, custom_star_rating=None, custom_ra
                 </div>
                 <div style="margin-top: 10px;">
                     <span style="font-size: 16px; font-weight: bold; color: #2E8B57; border: 1px solid #2E8B57; padding: 5px; border-radius: 5px;">
-                        "Z" AI: I would rate the confidence level of my output as an {confidence_level} out of 10.
+                    "Z" AI: I would rate the confidence level of my output as {f"an {confidence_level}" if confidence_level == 8 else f"a {confidence_level}"} out of 10.                 
                     </span>
                 </div>
                 <div style="margin-top: 20px; text-align: center;">
