@@ -42,12 +42,6 @@ def get_star_rating(scenario_num):
     return 1.5 if ai_public == "Low" else 4.5
 
 
-def get_scenario_caption(scenario_num):
-    """Generate caption describing the scenario"""
-    info_completeness, info_source, ai_self, ai_public = SCENARIOS[scenario_num]
-    return f"Scenario {scenario_num} | {info_completeness} Information Completeness | {info_source} Information Source Quality | {ai_self} AI Self-Rating | {ai_public} AI Public Rating"
-
-
 def generate_response(scenario_num):
     """Generate response with typing effect"""
     response = get_content(scenario_num)
@@ -60,7 +54,7 @@ def generate_response(scenario_num):
             time.sleep(0.002)
 
 
-def create_disney_scenario_page(scenario_num, custom_star_rating=None, custom_rating_count=None, custom_level_confidence=None):
+def create_disney_scenario_page(scenario_num, custom_star_rating=None, custom_rating_count=None, custom_level_confidence=None, survey_href=None):
     st.set_page_config(
         page_title="Disneyland Paris Assignment",
         page_icon="🏰",
@@ -93,14 +87,14 @@ def create_disney_scenario_page(scenario_num, custom_star_rating=None, custom_ra
 
     st.markdown(
         """
-        <div class="title">
-            Instructions: Please copy the following question to get background information: <span class="blue-bg">"Discuss the history of Disneyland Paris, including its facilities, visitor numbers, and recent major exhibitions."</span>
-        </div>
+            <div class="title">
+                指引：請複製以下問題以獲取巴黎迪士尼樂園的背景資訊:
+            </br>
+                <span class="blue-bg">“討論巴黎迪士尼樂園的歷史，包括其設施、遊客數量和近期重大的展覽。”</span>
+            </div>
         """,
         unsafe_allow_html=True
     )
-
-    st.caption(get_scenario_caption(scenario_num))
 
     # Initialize session state
     if "history" not in st.session_state:
@@ -124,7 +118,6 @@ def create_disney_scenario_page(scenario_num, custom_star_rating=None, custom_ra
         scenario_num)
 
     # Format rating count with K suffix
-    rating_count_display = f"{rating_count}K"
     if "rating" not in st.session_state:
         st.session_state.rating = star_rating
 
@@ -132,12 +125,12 @@ def create_disney_scenario_page(scenario_num, custom_star_rating=None, custom_ra
     with st.container(border=True):
         st.markdown(
             """
-            <h4>"Z" AI Background</h4>
+            <h4>「Z」AI 是一種先進的人工智慧搜尋引擎和聊天機器人工具，它利用大型語言模型 (LLM) 為用戶查詢提供詳細而準確的資訊。</h4>
             """,
             unsafe_allow_html=True
         )
-        col1, col2 = st.columns([1, 3])
-        with col1:
+        col1, col2, col3 = st.columns([1, 2, 1])
+        with col2:
             st_star_rating(
                 label="",
                 maxValue=5,
@@ -148,27 +141,28 @@ def create_disney_scenario_page(scenario_num, custom_star_rating=None, custom_ra
                 read_only=True
             )
 
-        with col2:
+        with col1:
             st.markdown(
-                f"""
-                <div style="display: flex; align-items: center; height: 100%;">
+                """
+                <div style="display: flex; align-items: center; height: 100%; justify-content: center;">
                     <span style="font-size: 24px; font-weight: bold;">
-                        {star_rating}/5.0 (rated by {rating_count}K)
+                        <span style="color: #2E8B57;">用戶滿意評分</span>
                     </span>
                 </div>
                 """,
                 unsafe_allow_html=True
             )
-        st.markdown(
-            """
-            <div style="margin-top: 10px; margin-bottom: 30px;">
-                "Z" AI is an advanced AI search engine and chatbot tool that uses Large Language Models (LLMs) to respond to user queries with detailed and accurate information.
-            </div>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-
+        with col3:
+            st.markdown(
+                f"""
+                <div style="display: flex; align-items: center; height: 100%;">
+                    <span style="font-size: 22px; font-weight: bold;">
+                        {star_rating}/5.0 ({rating_count} 萬人)
+                    </span>
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
     # Display chat history
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
@@ -184,20 +178,21 @@ def create_disney_scenario_page(scenario_num, custom_star_rating=None, custom_ra
 
         with st.chat_message("assistant"):
             response = st.write_stream(generate_response(scenario_num))
+            survey_link = survey_href if survey_href else ""
             st.markdown(
                 f"""
                 <div style="margin-top: 10px;">
-                    <span style="font-size: 16px; font-weight: bold; color: #2E8B57; border: 1px solid #2E8B57; padding: 5px; border-radius: 5px;">
-                        🤖 Confidence Level: {confidence_level}/10
+                    <span style="font-size: 24px; font-weight: bold; color: #2E8B57; border: 1px solid #2E8B57; padding: 5px; border-radius: 5px;">
+                        🤖 AI自信水平: {confidence_level}/10
                     </span>
                 </div>
                 <div style="margin-top: 10px;">
-                    <span style="font-size: 16px; font-weight: bold; color: #2E8B57; border: 1px solid #2E8B57; padding: 5px; border-radius: 5px;">
-                    "Z" AI: I would rate the confidence level of my output as {f"an {confidence_level}" if confidence_level == 8 else f"a {confidence_level}"} out of 10.                 
+                    <span style="font-size: 24px; font-weight: bold; color: #2E8B57; border: 1px solid #2E8B57; padding: 5px; border-radius: 5px;">
+                    「Z」 AI：我認為我的資訊的可信度為 {f"{confidence_level} 分"} （滿分 10 分）。                 
                     </span>
                 </div>
                 <div style="margin-top: 20px; text-align: center;">
-                    <a href="https://hkbu.questionpro.com/t/AVqX2Z5xKf" target="_blank" style="text-decoration: none;">
+                    <a href="{survey_link}" target="_blank" style="text-decoration: none;">
                         <button style="
                             background-color: #4CAF50; 
                             color: white; 

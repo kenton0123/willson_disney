@@ -26,26 +26,26 @@ SCENARIOS = {
 
 # Content for low information completeness
 LOW_INFO_CONTENT = (
-    "## Introduction to Disneyland Paris \n"
-    "Disneyland Paris, previously known as Euro Disney, opened in 1992. It's a big park with lots of attractions. The idea for the park started a long time ago, but it took a while to get built. It's located near Paris and is very popular among tourists [1].\n\n"
-    "## Facilities \n"
-    "Disneyland Paris has two main parks: Disneyland Park and Walt Disney Studios Park. There are lots of rides and shows, but it's hard to see everything in one visit. The park is big, so you need to plan your day carefully. There are also some hotels and a shopping area called Disney Village. It's a fun place to visit, especially if you like Disney movies [2].\n\n"
-    "## Visitor Numbers \n"
-    "A lot of people visit Disneyland Paris every year. In recent years, it has been very busy, with millions of visitors coming from all over the world. The exact numbers are impressive, but it's clear that the park is one of the most popular tourist spots in Europe. The park seems to get busier during holidays and summer months [3].\n\n"
-    "## Notable Recent Events \n"
-    "Disneyland Paris has had some exciting events lately. They celebrated a big anniversary recently, which was a big deal. The park also keeps adding new attractions and areas, which makes it interesting for visitors. Additionally, Disneyland Paris has a nice app that helps you plan your visit and avoid long lines. The park's food is also quite good, with lots of themed restaurants and cafes. Overall, it's a great place to spend time with family or friends [4].\n\n"
+    "## 巴黎迪士尼樂園介紹 \n"
+    "巴黎迪士尼樂園，原名歐洲迪士尼度假區，於 1992 年 4 月 12 日開業，標誌著歐洲娛樂業的一個重要里程碑。建造迪士尼樂園的想法在 20 世紀 70 年代末開始成形，但直到 1983 年東京迪士尼樂園取得成功後，該計畫才開始獲得發展動力。 1987 年與法國當局簽署協議，並於 1988 年開始建造。度假村自此成為歐洲主要的旅遊目的地 [1]。\n\n"
+    "## 設施 \n"
+    "巴黎迪士尼樂園由兩個主題樂園組成：迪士尼樂園和華特迪士尼影城。迪士尼樂園設有美國小鎮大街、探險世界、邊域世界等主題區，提供巨雷山、加勒比海盜等各種景點。華特迪士尼影城於 2002 年開業，專注於電影主題體驗，包括「料理鼠王：冒險之旅」和「星際大戰：銀河邊緣」等景點。度假村還包括幾家酒店和迪士尼村，提供購物和餐飲，提供卓越而難忘的旅行體驗 [2]。\n\n"
+    "## 訪客數量 \n"
+    "近年來，巴黎迪士尼樂園的遊客數量大幅增加。 2023年，該度假區共接待遊客1,610萬人次，略微打破了先前的遊客人數紀錄。迪士尼樂園吸引了 1,040 萬遊客，而華特迪士尼影城則吸引了 570 萬遊客，比前一年增加了 6.7%。巴黎迪士尼樂園自開幕以來已接待了超過 3.75 億遊客 [3]。\n\n"
+    "## 近期值得關注的事件 \n"
+    "最近值得關注的活動包括 2022 年慶祝巴黎迪士尼樂園成立 30 週年。該度假村也因其創新的體驗和故事敘述而獲得認可。此外，巴黎迪士尼樂園還擴大了其服務範圍，增加了新的景點和主題區域，例如將於 2022 年開放的漫威復仇者聯盟園區。這些發展幫助該度假村維持了歐洲領先旅遊目的地的地位 [4]。\n\n"
 )
 
 # Content for high information completeness
 HIGH_INFO_CONTENT = (
-    "## Introduction to Disneyland Paris \n"
-    "Disneyland Paris, originally known as Euro Disney Resort, opened on April 12, 1992, marking a significant milestone in European entertainment. The idea for the park began to take shape in the late 1970s, but it wasn't until the success of Tokyo Disneyland in 1983 that the project gained momentum. An agreement with French authorities was signed in 1987, and construction started in 1988. The resort has since become a major tourist destination in Europe [1].\n\n"
-    "## Facilities \n"
-    "Disneyland Paris comprises two theme parks: Disneyland Park and Walt Disney Studios Park. Disneyland Park features themed areas like Main Street USA, Adventureland, and Frontierland, offering a wide range of attractions such as Big Thunder Mountain and Pirates of the Caribbean. Walt Disney Studios Park, opened in 2002, focuses on movie-themed experiences with attractions like Ratatouille: The Adventure and Star Wars: Galaxy's Edge. The resort also includes several hotels and Disney Village for shopping and dining, offering excellent and unforgettable travel experience [2].\n\n"
-    "## Visitor Numbers \n"
-    "In recent years, Disneyland Paris has seen significant visitor numbers. In 2023, the resort welcomed a total of 16.1 million visitors, narrowly beating its previous attendance record. Disneyland Park attracted 10.4 million visitors, while Walt Disney Studios Park saw 5.7 million, marking a 6.7% increase from the previous year. Over its lifetime, Disneyland Paris has hosted more than 375 million visitors [3].\n\n"
-    "## Notable Recent Events \n"
-    "Notable recent events include the celebration of Disneyland Paris's 30th anniversary in 2022. The resort has also been recognized for its innovative experiences and storytelling. In addition, Disneyland Paris has expanded its offerings with new attractions and themed areas, such as the Marvel Avengers Campus, which opened in 2022. These developments have helped maintain the resort's position as a leading European tourist destination [4].\n\n"
+    "##巴黎迪士尼樂園介紹\n"
+    "巴黎迪士尼樂園，前身為歐洲迪士尼，於 1992 年開幕。這是一個擁有許多景點的大型公園。建造這個公園的想法很早以前就有了，但是卻花了一段時間才建成。它位於巴黎附近，非常受遊客歡迎[1]。\n\n"
+    "＃＃設施\n"
+    "巴黎迪士尼樂園有兩個主要園區：迪士尼樂園和華特迪士尼影城。這裡有很多遊樂設施和表演，但一次參觀很難看完所有表演。公園很大，所以你需要仔細規劃你的行程。這裡還有一些飯店和一個名為迪士尼村的購物區。這是一個有趣的地方，特別是如果你喜歡迪士尼電影 [2]。\n\n"
+    "訪客數量\n"
+    "每年都有很多人參觀巴黎迪士尼樂園。近年來，這裡非常繁忙，來自世界各地的遊客多達數百萬。確切的數字令人印象深刻，但很明顯，該公園是歐洲最受歡迎的旅遊景點之一。在假日和夏季，公園似乎會變得更加繁忙 [3]。\n\n"
+    "##近期值得關注的事件\n"
+    "巴黎迪士尼樂園最近舉辦了一些令人興奮的活動。他們最近慶祝了一個重要的周年紀念日，這是一件大事。公園也不斷增加新的景點和區域，為遊客增添樂趣。此外，巴黎迪士尼樂園還有一個不錯的應用程序，可以幫助您規劃行程並避免排長隊。公園裡的食物也相當不錯，有很多主題餐廳和咖啡館。總的來說，這是一個與家人或朋友共度時光的好地方[4]。\n\n"
 )
 
 # References for low information source quality

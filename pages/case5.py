@@ -85,9 +85,9 @@ def main():
     """, unsafe_allow_html=True)
 
     # Title and intro
-    st.markdown('<div class="title">Disneyland Paris Assignment</div>',
+    st.markdown('<div class="title">Disneyland Paris: A Critical Assignment</div>',
                 unsafe_allow_html=True)
-    st.markdown('<div class="warning">Accounts for 50% of the course grade</div>',
+    st.markdown('<div class="warning">Worth 50% of the Course Grade</div>',
                 unsafe_allow_html=True)
     st.markdown("---")
 
@@ -138,7 +138,7 @@ Instruction: Please copy the following question to receive background informatio
         with col3:
             st.markdown('<div class="button-container">',
                         unsafe_allow_html=True)
-            st.page_link("pages/case.py",
+            st.page_link("pages/scenario5.py",
                          label="Start Assignment", icon="🚀")
             st.markdown('</div>', unsafe_allow_html=True)
 
