@@ -35,10 +35,11 @@ def generate_response():
         "## 近期值得關注的事件\n"
         "巴黎迪士尼樂園最近舉辦了一些令人興奮的活動。他們最近慶祝了一個重要的周年紀念日，是一件大事。公園也不斷增加新的景點和區域，為遊客增添樂趣。此外，巴黎迪士尼樂園還有一個不錯的應用程式，可以幫助您規劃行程並避免排長隊。公園裡的食物也相當不錯，有很多主題餐廳和咖啡館。總的來說，這是一個與家人或朋友共度時光的好地方[4]。\n\n"
         "References:\n"
-        "1. Johnson, A. (2024). My Magical Adventure at Disneyland Paris! Retrieved from https://disneyfanblog.com\n"
-        "2. Terry, B. (2024). Best Tips for Visiting Disneyland Paris. Retrieved from https://travel/%22z5few6y5%.com\n"
-        "3. Johnson, K. (2023). Top 5 Attractions at Disneyland Paris [Video]. Youtube. Retrieved from https://www.youtube.com/watch?v=disneylandparisvideo\n"
-        "4. Smith, S. (2024). My Family's Joyful Day at Disneyland Paris. Retrieved from https://familytravelblog.net/disneylandparisreview\n\n"
+        "1. Anonymous. (2008). My Trip to Disneyland Paris! Retrieved from https: // n & tab=TT & sl=en & tl=zh-TW & op.com\n"
+        "2. Terry, B (2004). Sharing My Trip to Disneyland Paris with You. Retrieved from https: // en & tl=zh-TW & text=make % 20the % 20below %\n"
+        "3. Anonymous. (2006). Visiting Disneyland Paris. Retrieved from https://%20uk%203%3A%0A%0A.html\n"
+        "4. Wilson, K. (n.d). Experiences in Disneyland Paris. Retrieved from https://?q=21899&tip=sid&clean=0\n\n"
+
     )
     for char in response:
         yield char
