@@ -8,12 +8,15 @@ def main():
     custom_rating_count = 12  # 自定义评分人数 (以K为单位，例如150.5表示150,500人)
     custom_level_confidence = 2
 
+    survey_href = "https://hkbu.questionpro.com/t/AVqakZ589r"
+
     # 使用自定义值调用创建页面函数
     create_disney_scenario_page(
         scenario_num=6,
         custom_star_rating=custom_star_rating,
         custom_rating_count=custom_rating_count,
-        custom_level_confidence=custom_level_confidence
+        custom_level_confidence=custom_level_confidence,
+        survey_href=survey_href  # 替换为实际的调查链接
     )
 
 
