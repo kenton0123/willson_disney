@@ -9,7 +9,6 @@ def main():
     custom_level_confidence = 8
     survey_href = "https://hkbu.questionpro.com/t/AVqakZ59Af"  # 自定义调查链接
 
-    st.write("## Scenario 16")
     # 使用自定义值调用创建页面函数
     create_disney_scenario_page(
         scenario_num=16,
@@ -17,6 +16,11 @@ def main():
         survey_href=survey_href,  # 替换为实际的调查链接
         custom_rating_count=custom_rating_count,
         custom_level_confidence=custom_level_confidence
+    )
+    st.markdown("---")
+    st.write(
+        "本页面的调查链接为："
+        "[https://hkbu.questionpro.com/t/AVqakZ59Af](https://hkbu.questionpro.com/t/AVqakZ59Af)"
     )
 
 
