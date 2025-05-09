@@ -17,11 +17,6 @@ def main():
         custom_rating_count=custom_rating_count,
         custom_level_confidence=custom_level_confidence
     )
-    st.markdown("---")
-    st.write(
-        "本页面的调查链接为："
-        "[https://hkbu.questionpro.com/t/AVqakZ59Af](https://hkbu.questionpro.com/t/AVqakZ59Af)"
-    )
 
 
 if __name__ == "__main__":
