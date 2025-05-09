@@ -11,8 +11,8 @@ def main():
     # 使用自定义值调用创建页面函数
     create_disney_scenario_page(
         scenario_num=16,
-        survey_href=survey_href,  # 替换为实际的调查链接
         custom_star_rating=custom_star_rating,
+        survey_href=survey_href,  # 替换为实际的调查链接
         custom_rating_count=custom_rating_count,
         custom_level_confidence=custom_level_confidence
     )
