@@ -34,11 +34,11 @@ def generate_response():
         "每年都有很多人參觀巴黎迪士尼樂園。近年來，這裡非常繁忙，來自世界各地的遊客多達數百萬。確切的數字令人驚嘆，但很明顯，該公園是歐洲最受歡迎的旅遊景點之一。在假日和夏季，公園似乎會變得更加繁忙 [3]。\n\n"
         "## 近期值得關注的事件\n"
         "巴黎迪士尼樂園最近舉辦了一些令人興奮的活動。他們最近慶祝了一個重要的周年紀念日，是一件大事。公園也不斷增加新的景點和區域，為遊客增添樂趣。此外，巴黎迪士尼樂園還有一個不錯的應用程式，可以幫助您規劃行程並避免排長隊。公園裡的食物也相當不錯，有很多主題餐廳和咖啡館。總的來說，這是一個與家人或朋友共度時光的好地方[4]。\n\n"
-        "References:\n"
-        "1. Anonymouss. (2008). My Trip to Disneyland Paris! Retrieved from https://n&tab=TT&sl=en&tl=zh-TW&op.com\n"
-        "2. Terry, B (2004). Sharing My Trip to Disneyland Paris with You. Retrieved from https://en&tl=zh-TW&text=make%20the%20below%\n"
-        "3. Anonymous. (2006). Visiting Disneyland Paris. Retrieved from https://%20uk%203%3A%0A%0A.html\n"
-        "4. Wilson, K. (n.d). Experiences in Disneyland Paris. Retrieved from https://?q=21899&tip=sid&clean=0\n\n"
+        "参考文献:\n"
+        "1. 匿名. (2008). 我的巴黎迪士尼之旅！ 取自 https://n&tab=TT&sl=en&tl=zh-CN&op.com\n"
+        "2. 特里. (2004). 与你分享我的巴黎迪士尼之旅。 取自 https://en&tl=zh-CN&text=make%20the%20below%\n"
+        "3. 匿名. (2006). 参观巴黎迪士尼。 取自 https://%20uk%203%3A%0A%0A.html\n"
+        "4. 威爾森. (n.d.). 巴黎迪士尼的体验。 取自 https://?q=21899&tip=sid&clean=0\n"
 
     )
     for char in response:
