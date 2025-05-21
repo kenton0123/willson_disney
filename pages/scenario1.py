@@ -79,7 +79,7 @@ def main():
     st.markdown(
         """
             <div class="title">
-                指引：請複製以下問題以獲取背景資訊：
+                指引：請複製s以下問題以獲取背景資訊：
                 </br>
                 <span class="blue-bg">"討論巴黎迪士尼樂園的歷史，包括其設施、遊客數量以及最近的重大活動。"</span>
             </div>
