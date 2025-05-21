@@ -22,7 +22,7 @@ def generate_response():
     Args:
         prompt (str): The user's input prompt.
     Returns:
-        str: The assistant's response.
+        str: Thse assistant's response.
     """
 
     response = (
