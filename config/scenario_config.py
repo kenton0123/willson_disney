@@ -55,7 +55,7 @@ LOW_SOURCE_REFS = (
     "1. 匿名. (2008). 我的巴黎迪士尼之旅！ 取自 https://n&tab=TT&sl=en&tl=zh-CN&op.com\n"
     "2. 特里. (2004). 与你分享我的巴黎迪士尼之旅。 取自 https://en&tl=zh-CN&text=make%20the%20below%\n"
     "3. 匿名. (2006). 参观巴黎迪士尼。 取自 https://%20uk%203%3A%0A%0A.html\n"
-    "4. 威爾森. (n.d.). 巴黎迪士尼的体验。 取自 https://?q=21899&tip=sid&clean=0\n"
+    "4. 威尔森. (n.d.). 巴黎迪士尼的体验。 取自 https://?q=21899&tip=sid&clean=0\n"
 )
 
 # References for high information source quality
