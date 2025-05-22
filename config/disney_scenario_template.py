@@ -56,7 +56,7 @@ def generate_response(scenario_num):
 
 def create_disney_scenario_page(scenario_num, custom_star_rating=None, custom_rating_count=None, custom_level_confidence=None, survey_href=None):
     st.set_page_config(
-        page_title="巴黎迪斯尼乐园任务",
+        page_title="巴黎迪斯尼乐园作业",
         page_icon="🏰",
         layout="wide"
     )

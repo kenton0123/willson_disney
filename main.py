@@ -2,7 +2,7 @@ import streamlit as st
 
 # Set page configuration
 st.set_page_config(
-    page_title="巴黎迪斯尼乐园任务",
+    page_title="巴黎迪斯尼乐园作业",
     page_icon="🏰",
     layout="wide"
 )
@@ -85,7 +85,7 @@ def main():
     """, unsafe_allow_html=True)
 
     # Title and intro
-    st.markdown('<div class="title">巴黎迪斯尼乐园任务</div>',
+    st.markdown('<div class="title">巴黎迪斯尼乐园作业</div>',
                 unsafe_allow_html=True)
     st.markdown('<div class="warning">Accounts for 50% of the course grade</div>',
                 unsafe_allow_html=True)
