@@ -157,7 +157,7 @@ def create_disney_scenario_page(scenario_num, custom_star_rating=None, custom_ra
                 f"""
                 <div style="display: flex; align-items: center; height: 100%;">
                     <span style="font-size: 22px; font-weight: bold;">
-                        {star_rating}/5.0 ({rating_count} 萬人)
+                        {star_rating}/5.0 ({rating_count} 万人)
                     </span>
                 </div>
                 """,
