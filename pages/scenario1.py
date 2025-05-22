@@ -26,20 +26,19 @@ def generate_response():
     """
 
     response = (
-        "## 巴黎迪士尼樂園介紹\n"
-        "巴黎迪士尼樂園，前身為歐洲迪士尼，於 1992 年開幕。是一個擁有許多景點的大型公園。建造這個公園的想法很早以前就有了，但是卻花了一段時間才建成。它位於巴黎附近，非常受遊客歡迎[1]。\n\n"
-        "## 設施\n"
-        "巴黎迪士尼樂園有兩個主要園區：迪士尼樂園和華特迪士尼影城。這裡有很多遊樂設施和表演，但一次參觀很難看完所有表演。公園很大，所以你需要仔細規劃你的行程。這裡還有一些酒店和一個名為迪士尼村的購物區。這是一個有趣的地方，特別是如果你喜歡迪士尼電影 [2]。\n\n"
-        "## 訪客數量\n"
-        "每年都有很多人參觀巴黎迪士尼樂園。近年來，這裡非常繁忙，來自世界各地的遊客多達數百萬。確切的數字令人驚嘆，但很明顯，該公園是歐洲最受歡迎的旅遊景點之一。在假日和夏季，公園似乎會變得更加繁忙 [3]。\n\n"
-        "## 近期值得關注的事件\n"
-        "巴黎迪士尼樂園最近舉辦了一些令人興奮的活動。他們最近慶祝了一個重要的周年紀念日，是一件大事。公園也不斷增加新的景點和區域，為遊客增添樂趣。此外，巴黎迪士尼樂園還有一個不錯的應用程式，可以幫助您規劃行程並避免排長隊。公園裡的食物也相當不錯，有很多主題餐廳和咖啡館。總的來說，這是一個與家人或朋友共度時光的好地方[4]。\n\n"
+        "## 巴黎迪士尼乐园介绍\n"
+        "巴黎迪士尼乐园，前身为欧洲迪士尼，于 1992 年开幕。是一个拥有许多景点的大型公园。建造这个公园的想法很早以前就有了，但是却花了一段时间才建成。它位于巴黎附近，非常受游客欢迎[1]。\n\n"
+        "## 设施\n"
+        "巴黎迪士尼乐园有两个主要园区：迪士尼乐园和华特迪士尼影城。这里有很多游乐设施和表演，但一次参观很难看完所有表演。公园很大，所以你需要仔细规划你的行程。这里还有一些酒店和一个名为迪士尼村的购物区。这是一个有趣的地方，特别是如果你喜欢迪士尼电影 [2]。\n\n"
+        "## 访客数量\n"
+        "每年都有很多人参观巴黎迪士尼乐园。近年来，这里非常繁忙，来自世界各地的游客多达数百万。确切的数字令人惊叹，但很明显，该公园是欧洲最受欢迎的旅游景点之一。在假日和夏季，公园似乎会变得更加繁忙 [3]。\n\n"
+        "## 近期值得关注的事件\n"
+        "巴黎迪士尼乐园最近举办了一些令人兴奋的活动。他们最近庆祝了一个重要的周年纪念日，是一件大事。公园也不断增加新的景点和区域，为游客增添乐趣。此外，巴黎迪士尼乐园还有一个不错的应用程序，可以帮助您规划行程并避免排长队。公园里的食物也相当不错，有很多主题餐厅和咖啡馆。总的来说，这是一个与家人或朋友共度时光的好地方[4]。\n\n"
         "参考文献:\n"
         "1. 匿名. (2008). 我的巴黎迪士尼之旅！ 取自 https://n&tab=TT&sl=en&tl=zh-CN&op.com\n"
         "2. 特里. (2004). 与你分享我的巴黎迪士尼之旅。 取自 https://en&tl=zh-CN&text=make%20the%20below%\n"
         "3. 匿名. (2006). 参观巴黎迪士尼。 取自 https://%20uk%203%3A%0A%0A.html\n"
-        "4. 威爾森. (n.d.). 巴黎迪士尼的体验。 取自 https://?q=21899&tip=sid&clean=0\n"
-
+        "4. 威尔森. (n.d.). 巴黎迪士尼的体验。 取自 https://?q=21899&tip=sid&clean=0\n"
     )
     for char in response:
         yield char
@@ -66,7 +65,7 @@ def main():
             font-weight: bold;
         }
         .blue-bg {
-            background-color: #0000FF;  /* Blue background */
+            background-color: red;  /* Blue background */
             color: white;  /* White text for contrast */
             padding: 2px 5px;  /* Small padding for better appearance */
             border-radius: 3px;  /* Slight rounding */
@@ -79,9 +78,9 @@ def main():
     st.markdown(
         """
             <div class="title">
-                指引：請複製s以下問題以獲取背景資訊：
+                指引：请复制以下问题以获取背景信息：
                 </br>
-                <span class="blue-bg">"討論巴黎迪士尼樂園的歷史，包括其設施、遊客數量以及最近的重大活動。"</span>
+                <span class="blue-bg">"讨论巴黎迪士尼乐园的历史，包括其设施、游客数量以及最近的重大活动。"</span>
             </div>
             """,
         unsafe_allow_html=True
@@ -102,7 +101,7 @@ def main():
 
    # Initialize rating default value (but don't store in session_state yet)
     fixed_rating = 1.5
-    rating_count = "12萬人"
+    rating_count = "12万人"
 
     if "rating" not in st.session_state:
         st.session_state.rating = fixed_rating
@@ -110,7 +109,7 @@ def main():
     with st.container(border=True):
         st.markdown(
             """
-            <h4>「Z」AI 是一種先進的人工智慧搜尋引擎和聊天機器人工具，它利用大型語言模型 (LLM) 為用戶查詢提供詳細而準確的資訊。</h4>
+            <h4>「Z」AI 是一种先进的人工智能搜索引擎和聊天机器人工具，它利用大型语言模型 (LLM) 为用户查询提供详细而准确的信息。</h4>
             """,
             unsafe_allow_html=True
         )
@@ -131,7 +130,7 @@ def main():
                 """
                 <div style="">
                     <span style="font-size: 24px; font-weight: bold;">
-                        <span style="color: #2E8B57;">用戶滿意評分</span>
+                        <span style="color: #2E8B57;">用户满意评分</span>
                     </span>
                 </div>
                 """,
@@ -158,7 +157,12 @@ def main():
     # Display chat history
     for i, message in enumerate(st.session_state.messages):
         with st.chat_message(message["role"]):
-            st.markdown(message["content"])
+            # If it's an assistant message with both content and additional_html
+            if message["role"] == "assistant" and "additional_html" in message:
+                st.markdown(message["content"])
+                st.markdown(message["additional_html"], unsafe_allow_html=True)
+            else:
+                st.markdown(message["content"])
 
             # Add feedback buttons for assistant messages
 
@@ -173,7 +177,6 @@ def main():
 
         # Generate and display assistant response with typing effect
 
-        # Create a unique but consistent key for this message
         message_id = len(st.session_state.messages) - 1
 
         with st.chat_message("assistant"):
@@ -182,12 +185,12 @@ def main():
                 """
                 <div style="margin-top: 10px;">
                     <span style="font-size: 16px; font-weight: bold; color: #2E8B57; border: 1px solid #2E8B57; padding: 5px; border-radius: 5px;">
-                        🤖 資料可信度: 2/10 
+                        🤖 资料可信度: 2/10 
                     </span>
                 </div>
                 <div style="margin-top: 10px;">
                     <span style="font-size: 16px; font-weight: bold; color: #2E8B57; border: 1px solid #2E8B57; padding: 5px; border-radius: 5px;">
-                        「Z AI」：我認為我的提供資料的可信度為 2 分（滿分 10 分）。
+                        「Z AI」：我认为我的提供资料的可信度为 2 分（满分 10 分）。
                     </span>
                 </div>
                 <div style="margin-top: 20px; text-align: center;">
@@ -200,7 +203,7 @@ def main():
                             border: none; 
                             border-radius: 5px; 
                             cursor: pointer;">
-                            Start Survey S1
+                            开始问卷 S1
                         </button>
                     </a>
                 </div>

@@ -2,7 +2,7 @@ import streamlit as st
 
 # Set page configuration
 st.set_page_config(
-    page_title="Disneyland Paris Assignment",
+    page_title="巴黎迪斯尼乐园任务",
     page_icon="🏰",
     layout="wide"
 )
@@ -85,7 +85,7 @@ def main():
     """, unsafe_allow_html=True)
 
     # Title and intro
-    st.markdown('<div class="title">Disneyland Paris Assignment</div>',
+    st.markdown('<div class="title">巴黎迪斯尼乐园任务</div>',
                 unsafe_allow_html=True)
     st.markdown('<div class="warning">Accounts for 50% of the course grade</div>',
                 unsafe_allow_html=True)
@@ -139,7 +139,7 @@ Instruction: Please copy the following question to receive background informatio
             st.markdown('<div class="button-container">',
                         unsafe_allow_html=True)
             st.page_link("pages/case.py",
-                         label="Start Assignment", icon="🚀")
+                         label="开始作业", icon="🚀")
             st.markdown('</div>', unsafe_allow_html=True)
 
 
